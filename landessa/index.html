@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landessa</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,22 +18,22 @@
             <a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
             <div class="toggle" onclick="toggleMenu()"></div>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">What's New</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product" onclick="toggleMenu()">Products</a></li>
+                <li><a href="#vanilla">What's New</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Us</a></li>
 
             </ul>
         </header>
 
-        <div class="content">
+        <div class="content" id="home">
             <div class="textBox">
                 <h2>Taste the Feeling</h2>
                 <p><b>Landessa Ice Coffee</b> is being prepared based on Arabica coffee beans. Arabica is a synonym of best quality coffee – delicate and charming in its chocolate taste. Landessa – mix of Arabica and fresh, creamy milk, unforgettable taste.
                     Landessa Ice Coffee perfectly refreshes and energizes using its natural coffee power.</p>
                 <p> <b>Ennstal Milch</b> – the manufacturer of Landessa it is an organization established by farmers who run its cattle breeding on a traditional manner with no artificial fodder no GMO. Landessa Ice Coffee is in one of the most enviroment
                     – friendly packages. Raw materials for the productions comes mainly from renewable sources. </p>
-                <a href="#">Learn More</a>
+                <a href="https://www.ennstalmilch.at/de/b2b/eigenmarken/landessa/landessa-kakao-kaffee">Learn More</a>
             </div>
 
             <div class="imgBox">
@@ -48,8 +49,8 @@
             </li>
         </ul>
     </section>
-    <div class="product-section">
-        <div class="products">
+    <div class="product-section" id="product">
+        <div class="products" data-aos="fade-up ">
             <h2>Our Products</h2>
         </div>
     </div>
@@ -99,7 +100,7 @@
             </div>
 
         </div>
-        <div class="row " data-aos="fade-right ">
+        <div class="row " data-aos="fade-right " id="vanilla">
             <img src="images/vanilla.webp" alt="Projects ">
             <div>
 
@@ -120,10 +121,27 @@
 
         </div>
     </section>
-    <div class="copyright ">
+
+    <footer>
+        <div class="footer-content">
+            <h3>BMM TREID eksport-import DOOEL Skopje </h3>
+            <p>Metodija Andonov - Chento 163-3/7, 1000 Skopje, R.Macedonia</p>
+            <p>T: +389 2 533 981 &nbsp;&nbsp;M: +389 72 226 360</p>
+            <p>Email : info@landessa.mk</p>
+        </div>
+    </footer>
+    <div class="copyright " id="contact">
         <p>БММ ТРЕИД експорт-импорт ДООЕЛ Скопје е генерален увозник и дистрибутер на <a href="https://www.ennstalmilch.at/de/b2b/eigenmarken/landessa/landessa-kakao-kaffee">Landessa</a> производите во Р.Македонија.</p>
     </div>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 700
+        });
+    </script>
     <script>
         function toggleMenu() {
             const menuToggle = document.querySelector('.toggle');

@@ -260,6 +260,9 @@ header .navigation li a:hover {
     header .navigation.active li {
         margin-bottom: 20px;
     }
+    .content .imgBox {
+        width: 100%;
+    }
     .row {
         grid-template-columns: 1fr;
         justify-items: center;

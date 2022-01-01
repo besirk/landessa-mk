@@ -1,332 +1,146 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-html {
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landessa</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-}
+<body>
+    <section>
+        <div class="circle"></div>
 
-section .circle {
-    position: absolute;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: #4895ef;
-    clip-path: circle(70% at right -20%);
-}
+        <header>
+            <a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#product" onclick="toggleMenu()">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Us</a></li>
 
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+            </ul>
+        </header>
 
-header .logo {
-    position: relative;
-    max-width: 150px;
-}
+        <div class="content">
+            <div class="textBox">
+                <h2>Taste the Feeling</h2>
+                <p><b>Landessa Ice Coffee</b> is being prepared based on Arabica coffee beans. Arabica is a synonym of best quality coffee – delicate and charming in its chocolate taste. Landessa – mix of Arabica and fresh, creamy milk, unforgettable taste.
+                    Landessa Ice Coffee perfectly refreshes and energizes using its natural coffee power.</p>
+                <p> <b>Ennstal Milch</b> – the manufacturer of Landessa it is an organization established by farmers who run its cattle breeding on a traditional manner with no artificial fodder no GMO. Landessa Ice Coffee is in one of the most enviroment
+                    – friendly packages. Raw materials for the productions comes mainly from renewable sources. </p>
+                <a href="https://www.ennstalmilch.at/de/b2b/eigenmarken/landessa/landessa-kakao-kaffee">Learn More</a>
+            </div>
 
-header .navigation {
-    position: relative;
-    display: flex;
-}
+            <div class="imgBox">
+                <img src="images/landessa2.webp" alt="">
+            </div>
+        </div>
+        <ul class="sci">
+            <li>
+                <a href="https://www.facebook.com/Landessa-MK-1196122807070773/?ref=hl"><img src="images/facebook.png" alt="facebook"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/landessa.mk/"><img src="images/instagram.png" alt="instagram"></a>
+            </li>
+        </ul>
+    </section>
+    <div class="product-section" id="product">
+        <div class="products" data-aos="fade-up ">
+            <h2>Our Products</h2>
+        </div>
+    </div>
+    <section class="posts ">
+        <div class="row " data-aos="fade-up ">
+            <img src="images/latte.webp" alt="Projects ">
+            <div>
 
-header .navigation li {
-    list-style-type: none;
-}
+                <h1>Latte Macchiato</h1>
+                <p>So creamy, so light. The best skimmed milk meets aromatic Arabica beans - together they ensure sensual drinking pleasure in between. The fresh alpine milk comes from happy cows in the region and combines valuable ingredients and a rich
+                    taste - and that with the lowest fat content. Full enjoyment with no regrets.
+            </div>
+        </div>
+        <div class="row " data-aos="fade-up ">
+            <img src="images/decaf.webp" alt="Projects ">
+            <div>
 
-header .navigation li a {
-    font-size: 18px;
-    display: inline-block;
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    margin-left: 40px;
-}
+                <h1>Decaf</h1>
+                <p>Voller Kaffeegeschmack ohne Koffein – hier spielt der Geschmack die erste Geige. Für alle, die Kaffeegeschmack lieben und keinen Muntermacher brauchen, ist Landessa Decaf die erste Wahl. Zu jeder Tages- und Nachtzeit vollendeten Kaffeegenuss
+                    und cremig-frische Alpenmilch erleben – ganz ohne Koffein. Weil nur der Genuss zählt.
+            </div>
+        </div>
+        <div class="row " data-aos="fade-up ">
+            <img src="images/cappu.webp" alt="Projects ">
+            <div>
 
-header .navigation li a:hover {
-    color: #3f37c9;
-}
+                <h1>Cappucino</h1>
+                <p>A sensual taste experience: the best fresh alpine milk and fragrant coffee refined with a pinch of cocoa. A recipe for true gourmets. The Arabica beans develop their incomparable aroma in the fresh skimmed milk and form an irresistible
+                    symbiosis with the cocoa. Every sip a break. Our cappuccino is available in a practical mug and in the environmentally friendly CartoCan.
+            </div>
+        </div>
+        <div class="row " data-aos="fade-right ">
+            <img src="images/esp.webp" alt="Projects ">
+            <div>
+                <h1>Espresso</h1>
+                <p>Holt das Beste aus der Arabica Bohne heraus – Landessa Espresso ist ein erfrischender Muntermacher, bei dem der Genuss nicht zu kurz kommt. Ein Schuss Magermilch und Rahm runden das kräftige Kaffee-Aroma perfekt ab. Ein vollmundiger Wake-Up-Call
+                    für alle Sinne.
+            </div>
+        </div>
+        <div class="row " data-aos="fade-right ">
+            <img src="images/caffe-latte.webp" alt="Projects ">
+            <div>
 
-.content {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+                <h1>Caffe Latte</h1>
+                <p>Fresh whole milk and the finest notes of Arabica beans - a poem about an iced coffee for those who love it creamy and full-bodied. The Landessa Caffe Latte is not stingy with its charms and trumps itself in terms of creaminess and elegance.
+                    The finest coffee and the best fresh alpine milk in harmony for complete enjoyment.
+            </div>
 
-.content .textBox {
-    position: relative;
-    max-width: 600px;
-    margin-right: 20px;
-}
+        </div>
+        <div class="row " data-aos="fade-right ">
+            <img src="images/vanilla.webp" alt="Projects ">
+            <div>
 
-.content .textBox h2 {
-    color: #4895ef;
-    font-size: 3em;
-    margin-bottom: 10px;
-    line-height: 1.4em;
-    font-weight: 700;
-}
+                <h1>Vanilla</h1>
+                <p>Aromatic arabica beans, creamy milk and a hint of vanilla - people go into raptures at Landessa Vanilla. An iced coffee like a dessert that flatters not only the palate but also the soul and comes across as carefree. No wonder that vanilla
+                    is one of the most popular varieties and is therefore available in cups and CartoCan!
+            </div>
 
-.content .textBox p {
-    color: #333;
-}
+        </div>
+        <div class="row " data-aos="fade-right ">
+            <img src="images/kakao.webp" alt="Projects ">
+            <div>
 
-.content .textBox a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background-color: #4895ef;
-    color: #fff;
-    border-radius: 40px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
+                <h1>Cocoa</h1>
+                <p>Aromatic arabica beans, creamy milk and a hint of vanilla - people go into raptures at Landessa Vanilla. An iced coffee like a dessert that flatters not only the palate but also the soul and comes across as carefree. No wonder that vanilla
+                    is one of the most popular varieties and is therefore available in cups and CartoCan!
+            </div>
 
-.sci {
-    position: absolute;
-    bottom: 40px;
-    left: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sci li {
-    list-style: none;
-}
-
-.sci li a {
-    display: inline-block;
-    margin-left: 15px;
-    background-color: #4895ef;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-}
-
-.sci li a:hover {
-    background-color: #4895ef;
-    transform: translateY(-10px);
-}
-
-.sci li a img {
-    filter: invert(1);
-    transform: scale(0.5);
-}
+        </div>
+    </section>
+    <div class="copyright " id="contact">
+        <p>БММ ТРЕИД експорт-импорт ДООЕЛ Скопје е генерален увозник и дистрибутер на <a href="https://www.ennstalmilch.at/de/b2b/eigenmarken/landessa/landessa-kakao-kaffee">Landessa</a> производите во Р.Македонија.</p>
+    </div>
 
 
-/* slidderrrrrrr*/
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 700
+        });
+    </script>
+    <script>
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
 
-.content .imgBox {
-    width: 500px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.content .imgBox img {
-    max-width: 600px;
-}
-
-.posts {
-    flex-direction: column;
-}
-
-.row {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 2em;
-    padding: 3em 2em;
-}
-
-.row h1 {
-    font-size: 35px;
-    color: #4895ef;
-}
-
-.row p {
-    font-size: 16px;
-    max-width: 33em;
-}
-
-.row img {
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.product-section {
-    position: relative;
-    width: 100%;
-    padding-top: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
-    align-content: center;
-}
-
-.product-section h2 {
-    font-size: 50px;
-    font-weight: 700;
-    color: #4895ef;
-}
-
-.copyright {
-    align-items: center;
-    text-align: center;
-    margin: 0%;
-    padding: 10px;
-    color: #333;
-}
-
-
-/* media queries */
-
-@media (max-width: 1064px) {
-    header {
-        padding: 40px;
-    }
-    section {
-        padding: 150px 40px;
-    }
-    .sci {
-        left: 40px;
-    }
-}
-
-@media (max-width:990px) {
-    .content {
-        flex-direction: column;
-        margin-top: 30px;
-    }
-    .content .textBox {
-        max-width: 100%;
-    }
-    .content .textBox h2 {
-        color: #333;
-        font-size: 2.7em;
-    }
-    .content .textBox p {
-        font-size: 18px;
-    }
-    .content .imgBox {
-        margin-top: 30px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    header .navigation {
-        display: none;
-    }
-    header .navigation.active {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #4895ef;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-    }
-    header .navigation.active li {
-        margin-bottom: 20px;
-    }
-    header .navigation.active li a {
-        font-size: 1.5em;
-        font-weight: 400;
-    }
-    .content .imgBox {
-        width: 100%;
-    }
-    .row {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-    .row img {
-        width: 100%;
-    }
-    .row h1 {
-        font-size: 35px;
-        margin-bottom: 20px;
-    }
-    .row p {
-        font-size: 18px;
-    }
-    .toggle {
-        position: relative;
-        width: 30px;
-        height: 30px;
-        background: url(images/menu.png);
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-        z-index: 10000;
-    }
-    .toggle.active {
-        position: fixed;
-        right: 40px;
-        background: url(images/close.png);
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-position: center
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .row img {
-        width: 100%;
-    }
-    .row p {
-        text-justify: auto;
-    }
-    .content .textBox a {
-        padding: 15px 35px;
-        width: 100%;
-        margin-top: 25px;
-        text-align: center;
-    }
-    .content .imgBox {
-        margin-top: 40px;
-    }
-    .content .imgBox img {
-        max-width: 100%;
-    }
-    .product-section h2 {
-        font-size: 35px;
-        text-align: center;
-    }
-}
+</html>
